@@ -18,7 +18,7 @@
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb
+
 
 # Project directories with large data
 Bladder_spatial_3/
