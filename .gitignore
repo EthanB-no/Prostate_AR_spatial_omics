@@ -1,55 +1,60 @@
-*.csv
-*.tsv
-*.jpg
-*.jpeg
-*.png
-*.gz
-*.h5ad
-
-Bladder_spatial_3/
-Bladder_spatial_data
-dog bed.md
-TN_MIBC_4_samples/
-Prostate_spatial_data/
-11-6_bladder_dataset_2.ipynb
-
-# --- uv virtual environment ---
-.venv/
-venv/
-uv.lock
-# keep the lock file tracked (see below)
-!uv.lock
-
-
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-build/
-dist/
-*.egg-info/
-
-
+# Data files (ignore all large raw data)
 *.csv
 *.tsv
 *.xlsx
 *.h5
+*.h5ad
 *.json
-
-
+*.txt
 *.log
 *.out
 *.err
+*.gz
+
+# Images
+*.jpg
+*.jpeg
+*.png
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Project directories with large data
+Bladder_spatial_3/
+Bladder_spatial_data/
+TN_MIBC_4_samples/
+Prostate_spatial_data/
 output/
 results/
 data/
 figures/
 
+# uv virtual environments
+.venv/
+venv/
 
-.ipynb_checkpoints/
+# uv lockfile SHOULD be tracked
+uv.lock
+!uv.lock
 
+# Build outputs
+build/
+dist/
+*.egg-info/
 
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# OS / Editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+
+# Random file
+dog bed.md
+11-6_bladder_dataset_2.ipynb
